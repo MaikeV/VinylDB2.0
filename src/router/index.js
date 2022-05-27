@@ -6,8 +6,8 @@ Vue.use(VueRouter);
 const routes = [
   {
     path: '/',
-    name: 'Overview',
-    component: () => import( '../views/Overview.vue')
+    name: 'overview',
+    component: () => import( '../components/OverviewList.vue')
   },
   //,{
     //path: '/editor/:moduleName/:documentTitle',
