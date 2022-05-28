@@ -1,0 +1,76 @@
+<template>
+  <v-container fluid class="content mt-5">
+    <v-row class="text-center" justify="center">
+      <v-col cols="8">
+        <v-card>
+          <v-card-text>
+            <h2>Mint (M)</h2>
+            <p>
+              Absolutely perfect in every way. Certainly never been played, possibly even still sealed. Should be used sparingly as a grade, if at all.
+            </p>
+          </v-card-text>
+        </v-card>
+      </v-col>
+    </v-row>
+    <v-row class="text-center" justify="center">
+      <v-col cols="8">
+        <v-card>
+          <v-card-text>
+            <h2>Near Mint (NM or M-)</h2>
+            <p>
+              A nearly perfect record. A NM or M- record has more than likely never been played, and the vinyl will play perfectly, with no imperfections during playback. Many dealers won't give a grade higher than this implying (perhaps correctly) that no record is ever truly perfect. The record should show no obvious signs of wear. A 45 RPM or EP sleeve should have no more than the most minor defects, such as any sign of slight handling. An LP cover should have no creases, folds, seam splits, cut-out holes, or other noticeable similar defects. The same should be true of any other inserts, such as posters, lyric sleeves, etc.
+            </p>
+          </v-card-text>
+        </v-card>
+      </v-col>
+    </v-row>
+    <v-row class="text-center" justify="center">
+      <v-col cols="8">
+        <v-card>
+          <v-card-text>
+            <h2>Very Good Plus (VG+)</h2>
+            <p>
+              Generally worth 50% of the Near Mint value. A Very Good Plus record will show some signs that it was played and otherwise handled by a previous owner who took good care of it. Defects should be more of a cosmetic nature, not affecting the actual playback as a whole. Record surfaces may show some signs of wear and may have slight scuffs or very light scratches that don't affect one's listening experiences. Slight warps that do not affect the sound are "OK". The label may have some ring wear or discoloration, but it should be barely noticeable. Spindle marks may be present. Picture sleeves and inner sleeves will have some slight wear, slightly turned-up corners, or a slight seam split. An LP cover may have slight signs of wear, and may be marred by a cut-out hole, indentation, or cut corner. In general, if not for a couple of minor things wrong with it, this would be Near Mint.
+            </p>
+          </v-card-text>
+        </v-card>
+      </v-col>
+    </v-row>
+    <v-row class="text-center" justify="center">
+      <v-col cols="8">
+        <v-card>
+          <v-card-text>
+            <h2>Very Good (VG)</h2>
+            <p>
+              Generally worth 25% of Near Mint value. Many of the defects found in a VG+ record will be more pronounced in a VG disc. Surface noise will be evident upon playing, especially in soft passages and during a song's intro and fade, but will not overpower the music otherwise. Groove wear will start to be noticeable, as with light scratches (deep enough to feel with a fingernail) that will affect the sound. Labels may be marred by writing, or have tape or stickers (or their residue) attached. The same will be true of picture sleeves or LP covers. However, it will not have all of these problems at the same time. Goldmine price guides with more than one price will list Very Good as the lowest price.
+            </p>
+          </v-card-text>
+        </v-card>
+      </v-col>
+    </v-row>
+    <v-row class="text-center" justify="center">
+      <v-col cols="8">
+        <v-card>
+          <v-card-text>
+            <h2>Good (G), Good Plus (G+)</h2>
+            <p>
+              Generally worth 10-15% of the Near Mint value. A record in Good or Good Plus condition can be played through without skipping. But it will have significant surface noise, scratches, and visible groove wear. A cover or sleeve will have seam splits, especially at the bottom or on the spine. Tape, writing, ring wear, or other defects will be present. While the record will be playable without skipping, noticeable surface noise and "ticks" will almost certainly accompany the playback.
+            </p>
+          </v-card-text>
+        </v-card>
+      </v-col>
+    </v-row>
+    <v-row class="text-center" justify="center">
+      <v-col cols="8">
+        <v-card>
+          <v-card-text>
+            <h2>Poor (P), Fair (F)</h2>
+            <p>
+              Generally worth 0-5% of the Near Mint price. The record is cracked, badly warped, and won't play through without skipping or repeating. The picture sleeve is water damaged, split on all three seams and heavily marred by wear and writing. The LP cover barely keeps the LP inside it. Inner sleeves are fully split, crinkled, and written upon.
+            </p>
+          </v-card-text>
+        </v-card>
+      </v-col>
+    </v-row>
+  </v-container>
+</template>

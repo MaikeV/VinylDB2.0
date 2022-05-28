@@ -15,6 +15,20 @@
             </v-text-field>
           </v-card-title>
           <v-data-table :headers="headers" :items="albums" :search="search">
+            <template v-slot:item.gatefold="{ item }">
+              <v-icon v-if="item.gatefold">mdi-check-bold</v-icon>
+              <v-icon v-else>mdi-close-thick</v-icon>
+            </template>
+            <template v-slot:item.pictureDisc="{ item }">
+              <v-icon v-if="item.pictureDisc">mdi-check-bold</v-icon>
+              <v-icon v-else>mdi-close-thick</v-icon>
+            </template>
+            <template v-slot:item.conditionLP="{ item }">
+              <v-chip :color="getColor(item.conditionLP)" dark>{{ item.conditionLP }}</v-chip>
+            </template>
+            <template v-slot:item.conditionCover="{ item }">
+              <v-chip :color="getColor(item.conditionCover)" dark>{{ item.conditionCover }}</v-chip>
+            </template>
             <template v-slot:item.actions="{ item }">
               <v-btn small fab class="mr-2" @click="editItem(item)">
                 <v-icon>mdi-pencil</v-icon>
@@ -39,7 +53,13 @@
     methods: {
       openDialog() {
         store.commit('misc/switch')
-      }
+      },
+      getColor (condition) {
+        console.log(condition)
+        store.commit('conditions/getColor', condition)
+
+        return store.state.conditions.color
+      },
     },
     components: {
       CreateDlg
@@ -47,7 +67,7 @@
     data: () => ({
       search: '',
       headers: [
-        { text: 'Artist', value: 'artist', align: 'start'},
+        { text: 'Artist', value: 'artist', align: 'start' },
         { text: 'Title', value: 'title' },
         { text: 'Gatefold', value: 'gatefold' },
         { text: 'Color', value: 'color' },

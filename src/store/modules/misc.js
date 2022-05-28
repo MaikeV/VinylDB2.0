@@ -1,11 +1,11 @@
 const state = () => ({
-    dialog: false
+  dialog: false
 })
 
 const mutations = {
-    switch(state) {
-        state.dialog = !state.dialog
-    }
+  switch(state) {
+      state.dialog = !state.dialog
+  }
 }
 
 const actions = {
@@ -13,6 +13,6 @@ const actions = {
 }
 
 export default {
-    namespaced: true,
-    state, actions, mutations
+  namespaced: true,
+  state, actions, mutations
 }

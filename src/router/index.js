@@ -7,7 +7,12 @@ const routes = [
   {
     path: '/',
     name: 'overview',
-    component: () => import( '../components/OverviewList.vue')
+    component: () => import( '../views/Overview.vue')
+  },
+  {
+    path: '/conditions',
+    name: 'conditions',
+    component: () => import( '../views/Conditions.vue')
   },
   //,{
     //path: '/editor/:moduleName/:documentTitle',

@@ -1,10 +1,17 @@
 <template class="noScroll">
     <v-app class="noScroll">
         <v-navigation-drawer v-model="drawer" app clipped color="blue accent-4">
-            <v-list dense>
-                <NavbarItem linkto="/" title="Dashboard">
-                    <v-icon>mdi-view-dashboard</v-icon>
+            <v-list class="d-flex flex-column" height="100%" dense>
+                <NavbarItem linkto="/" title="Collection">
+                    <v-icon>mdi-album</v-icon>
                 </NavbarItem>
+                <NavbarItem linkto="/wishlist" title="Wishlist">
+                    <v-icon>mdi-format-list-checkbox</v-icon>
+                </NavbarItem>
+                <NavbarItem linkto="/conditions" title="Condition Grades">
+                    <v-icon>mdi-alpha-m-circle-outline</v-icon>
+                </NavbarItem>
+                <v-spacer></v-spacer>
                 <NavbarItem linkto="/settings" title="Settings">
                     <v-icon>mdi-tools</v-icon>
                 </NavbarItem>
