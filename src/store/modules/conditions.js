@@ -37,8 +37,7 @@ const mutations = {
   getColor(state, condition) {
     state.conditions.find(c => {
       if(c.name === condition) {
-          state.color = c.color
-          console.log(c.color)
+        state.color = c.color
       }
     })
   }
